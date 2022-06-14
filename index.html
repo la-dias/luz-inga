@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Luz Ingá</title>
+</head>
+
+<body>
+
+
+  <header>
+    <div class="container">
+      <a href="" class="logo">Luz <strong>Ingá</strong></a>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><button class="login">Login</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <h1>Veja abaixo nossos produtos em destaque:</h1>
+      <ul class="lista-produtos">
+        <li class="card"><img src="https://images.unsplash.com/photo-1537739670075-76f02633de02?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8bGlnaHQlMjBmaXh0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Produto">
+          <legend>Produto 1</legend> <a href="#">Orçamento</a>
+        </li>
+        <li class="card"><img src="https://images.unsplash.com/photo-1602145461313-26c587cc0ca9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bGlnaHQlMjBmaXh0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Produto">
+          <legend>Produto 2</legend> <a href="#">Orçamento</a>
+        </li>
+        <li class="card"><img src="https://images.unsplash.com/photo-1592622515232-6e3e2a0d3d9a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8bGlnaHQlMjBmaXh0dXJlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Produto">
+          <legend>Produto 3</legend> <a href="#">Orçamento</a>
+        </li>
+
+        <li class="card"><img src="https://images.unsplash.com/photo-1625498691217-83f283fbd021?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGxpZ2h0JTIwZml4dHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Produto">
+          <legend>Produto 4</legend> <a href="#">Orçamento</a>
+        </li>
+        <li class="card"><img src="https://images.unsplash.com/photo-1568302621993-8700d490546a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGxpZ2h0JTIwZml4dHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Produto">
+          <legend>Produto 5</legend> <a href="#">Orçamento</a>
+        </li>
+        <li class="card"><img src="https://images.unsplash.com/photo-1555334294-eb9a14b6a963?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGxpZ2h0JTIwZml4dHVyZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" alt="Produto">
+          <legend>Produto 6</legend> <a href="#">Orçamento</a>
+        </li>
+      </ul>
+
+    </div>
+
+  </main>
+
+  <section class="newsletter">
+    <div class="container">
+      <h2> Cadastre seu email abaixo e recebe promoções e novidades:</h2>
+      <fieldset>
+
+        <label for="nome">Nome</label>
+        <input type="text" id="nome">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="joao@gmail.com">
+        <button> Enviar</button>
+      </fieldset>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+
+      <div class="endereco">
+        <h3>Endereço</h3>
+        <span>Av Não Existe, n 99</span>
+        <span>CEP 12345-678</span>
+        <span>São Paulo, SP</span>
+      </div>
+
+      <div class="contato">
+        <h3>Contatos</h3>
+        <span>luzinga@emailfake.com</span>
+        <span>Tel1: 11 2222-4444</span>
+        <span>Tel2: 11 99999-9999</span>
+      </div>
+
+
+
+    </div>
+
+  </footer>
+
+
+
+</body>
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    list-style: none;
+    text-decoration: none;
+  }
+
+  header {
+    background-color: #222;
+  }
+
+  .logo,
+  nav ul li a {
+    color: aliceblue;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .login {
+    font-size: 18px;
+    border-radius: 2px;
+    border: 1px aliceblue;
+    padding: 8px;
+    color: #222;
+    font-weight: bold;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
+  strong {
+    text-shadow: 2px 2px rgba(200, 200, 200, 0.5);
+  }
+
+  .container {
+    display: flex;
+    max-width: 940px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  header .container {
+    align-items: center;
+  }
+
+  main {
+    background-color: #c7c7c7;
+  }
+
+  h1 {
+    margin-top: 60px;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  main .container {
+    flex-direction: column;
+  }
+
+  .lista-produtos {
+    margin-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+
+  .lista-produtos li {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: Center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .lista-produtos li img {
+    height: 260px;
+    width: 260px;
+  }
+
+  legend {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .lista-produtos li a {
+    border: 1px #222 solid;
+    display: block;
+    border-radius: 3px;
+    padding: 5px;
+    color: #222;
+    font-size: 18px;
+  }
+
+  .newsletter {
+    background-color: #222;
+  }
+
+  h2 {
+    color: aliceblue;
+    margin-bottom: 20px;
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  label {
+    color: aliceblue;
+    margin-right: 10px;
+    font-size: 20px;
+  }
+
+  input {
+    padding: 5px;
+    margin-right: 40px;
+    width: 200px;
+  }
+
+  fieldset button {
+    font-size: 16px;
+    border-radius: 2px;
+    border: 1px aliceblue;
+    padding: 5px 30px;
+    color: #222;
+    font-weight: bold;
+    margin-left: 30px;
+    cursor: pointer;
+  }
+
+  .newsletter .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    background-color: black;
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  .dados-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .endereco,
+  .contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+</style>
+
+</html>
